@@ -31,9 +31,9 @@ document.querySelector("#container").addEventListener("click",(e) => {
     if(clicked >=4){
         if(checkWinner(zero,arr,col,row)){
             if(zero){
-                document.getElementById("winner").innerText = "Team 1 Win"
+                document.getElementById("winner").innerText = "Player 1 Won"
             } else{
-                document.getElementById("winner").innerText = "Team 2 Win"
+                document.getElementById("winner").innerText = "Player 2 Won"
             }
             document.getElementById("btn").style.visibility = "initial"
         }
@@ -61,7 +61,7 @@ document.getElementById("btn").addEventListener("click",() => {
     arr = [[null,null,null],[null,null,null],[null,null,null]]
     zero = true
     clicked = 0
-    
+
     for(let id=1;id<=9;id++){
         document.getElementById("z"+id).style.display = "none"
         document.getElementById("c"+id).style.display = "none"
