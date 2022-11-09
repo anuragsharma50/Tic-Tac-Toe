@@ -1,0 +1,55 @@
+body{
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#winner{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: cursive;
+    margin-bottom: 25px;
+}
+
+.row {
+    display: flex;
+}
+
+.bb{
+    border-bottom: 2px solid;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.br{
+    border-right: 2px solid black;
+}
+
+.zero{
+    font-size: 86px;
+    text-align: center;
+    display: none;
+}
+
+.cross {
+    font-size: 86px;
+    text-align: center;
+    display: none;
+}
+
+#btn {
+    background: #FF4742;
+    border-radius: 6px;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 14px;
+    margin-top: 30px;
+    /* visibility: hidden; */
+}
